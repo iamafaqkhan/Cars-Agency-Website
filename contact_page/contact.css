@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'my-font' ;
+    src: url("../asset/Montserrat-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'my-font';
+    
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+}
+/* Navigation Start */
+.navigation {
+    background-color: navy;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+    align-items: baseline;
+       
+}
+
+.navlist {
+    max-width: 800px;
+    flex: 1;
+    text-align: center;
+}
+.nav-logo {
+    align-items: baseline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navitem {
+    padding: 0px 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.button button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    color: navy;
+   
+}
+.button{
+    display: inline-block;
+}
+.button button:hover {
+    background-color:  red;
+    color: white;
+    transition-duration: 0.4s;
+}
+.navitem:hover{
+    font-weight: bold;
+    text-shadow: 0px 0px 10px white;
+}
+@media screen and (max-width: 600px) {
+    
+    .navlist {
+        background-color: gray;
+        color: white;
+        margin-top: 5px;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+    .nav-button {
+        margin-top:10px ;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+/* Navigation End */
+
+.custom-shape-divider-top-1737742160 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1737742160 svg {
+    position: relative;
+    display: block;
+}
+
+.custom-shape-divider-top-1737742160 .shape-fill {
+    fill: #00007F;
+}
+
+
+/* main start */
+ 
+.header-text {
+    color: navy;
+    text-align: center;
+    font-size: large;
+    margin-top: 8%;
+}
+.touch {
+    margin: 10% 10%;
+    
+}
+.get-data h3,p,p > a{
+    color: navy;
+    
+}
+.get-data {
+    border-bottom: 1px solid navy;
+    padding: 2%;
+    max-width: 350px;
+    text-align: start;
+   
+}
+
+.form {
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:2% 5%;
+}
+.contact-form {
+    max-width: 600px;
+    flex: 1;   
+}
+.form-header{
+    border-bottom: 1px solid navy;
+    padding: 15px 0px;
+    background-color: navy;
+    color: white;
+}
+.form-header h2,p {
+    text-align: center;
+    line-height: 30px;
+    
+}
+.form-body {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+.row {
+    display: flex;
+}
+.input-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+label {
+    color: navy;
+}
+input[type="text"] , [type="email"] ,[type="number"], [class="select"] ,[type="submit"]{
+    width: 100%;
+    font-size: 15px;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(204, 198, 198);
+    border: 0px;
+}
+
+
+/* main end */
+.footer-container{
+    width: 100%;
+    padding: 5%;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-style: italic;
+
+}
+.quicklinks > p {
+    font-weight: bold;
+}
+.contacts > p{
+    font-weight: bold;
+}
+.list a,li{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    line-height: 30px;
+    margin-left: 1%;
+}
+.contacts img, a{
+    text-decoration: none;
+    vertical-align: middle;
+    color:white;
+    cursor: pointer;
+    padding: 5px; 
+    line-height: 5px; 
+}
+.address address {
+    line-height: 30px;
+    color: white;
+}

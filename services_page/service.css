@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'my-font' ;
+    src: url("../asset/Montserrat-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'my-font';
+    /* border: 1px solid black; */
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(206, 203, 203);
+   
+}
+/* Navigation Start */
+.navigation {
+    background-color: navy;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+    align-items: baseline;
+       
+}
+
+.navlist {
+    max-width: 800px;
+    flex: 1;
+    text-align: center;
+}
+.nav-logo {
+    align-items: baseline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navitem {
+    padding: 0px 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.button button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    color: navy;
+   
+}
+.button{
+    display: inline-block;
+}
+.button button:hover {
+    background-color:  red;
+    color: white;
+    transition-duration: 0.4s;
+}
+.navitem:hover{
+    font-weight: bold;
+    text-shadow: 0px 0px 10px white;
+}
+@media screen and (max-width: 600px) {
+    
+    .navlist {
+        background-color: gray;
+        color: white;
+        margin-top: 5px;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+    .nav-button {
+        margin-top:10px ;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+/* Navigation End */
+
+
+.header-section img {
+    position: absolute;
+    margin: 10px;
+}
+.header-text {
+    position: relative;
+    
+}
+
+.custom-shape-divider-top-1737742160 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1737742160 svg {
+    position: relative;
+    display: block;
+}
+
+.custom-shape-divider-top-1737742160 .shape-fill {
+    fill: #00007F;
+}
+
+
+/* main Section Code */
+.header-text {
+    color: navy;
+    text-align: center;
+    font-size: larger;
+    margin: 5%;
+    /* background-color:  rgb(206, 203, 203); */
+ 
+}
+.service {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color:  rgb(206, 203, 203);
+}
+.car-services {
+    max-width: 250px;
+    min-height: 10px;
+    line-height: 30px;
+    margin: 1%;
+    background-color: rgb(189, 186, 186);
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.car-services:hover {
+    border-radius: 10px;
+    border: 2px solid  gainsboro;
+    background-color: rgb(206, 203, 203);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.ser-text {
+    text-align: center;
+    color: navy;
+}
+.rent-img {
+    text-align: center;
+    margin: 5%;
+}
+.rent-img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.button-ser{
+    
+    padding: 10px 30px;
+    margin: 5%;
+    color: white;
+    background-color: navy;
+    border: 0px none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer; 
+    margin-top: 25px;
+    margin-left: 37px;
+
+}
+.button-ser:hover{
+    background-color: red;
+    color: white;
+    transition-duration: 0.4s;
+}
+.faq {
+    text-align: justify;
+    padding: 5%;
+    line-height: 40px;
+    position: relative;
+    background-color: rgb(206, 203, 203);
+    color: navy;
+    margin: 5%;
+    
+}
+.faq div {
+    border-bottom: 1px solid grey;
+}
+.faq h2{
+    margin-top: 2%;
+}
+.question {
+    font-weight: bold;
+}
+
+/* main--------end-------main */
+/* Footer code */
+.footer-container{
+    width: 100%;
+    padding: 5%;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-style: italic;
+
+}
+.quicklinks > p {
+    font-weight: bold;
+}
+.contacts > p{
+    font-weight: bold;
+}
+.list a,li{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    line-height: 30px;
+    margin-left: 1%;
+}
+.contacts img, a{
+    text-decoration: none;
+    vertical-align: middle;
+    color:white;
+    cursor: pointer;
+    padding: 5px; 
+    line-height: 5px; 
+}
+.address {
+    line-height: 30px;
+}

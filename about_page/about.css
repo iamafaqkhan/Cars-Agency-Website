@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'my-font' ;
+    src: url("../asset/Montserrat-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'my-font';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(206, 203, 203);
+}
+/* Navigation Start */
+.navigation {
+    background-color: navy;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+    align-items: baseline;
+       
+}
+
+.navlist {
+    max-width: 800px;
+    flex: 1;
+    text-align: center;
+}
+.nav-logo {
+    align-items: baseline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navitem {
+    padding: 0px 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.button button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    color: navy;
+   
+}
+.button{
+    display: inline-block;
+}
+.button button:hover {
+    background-color:  red;
+    color: white;
+    transition-duration: 0.4s;
+}
+.navitem:hover{
+    font-weight: bold;
+    text-shadow: 0px 0px 10px white;
+}
+@media screen and (max-width: 600px) {
+    
+    .navlist {
+        background-color: gray;
+        color: white;
+        margin-top: 5px;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+    .nav-button {
+        margin-top:10px ;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+/* Navigation End */
+
+.custom-shape-divider-top-1737742160 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1737742160 svg {
+    position: relative;
+    display: block;
+}
+
+.custom-shape-divider-top-1737742160 .shape-fill {
+    fill: #00007F;
+}
+
+
+
+/* main start */
+
+
+.header-text {
+    color: navy;
+    text-align: center;
+    font-size: larger;
+    margin: 5%;
+    /* background-color:  rgb(206, 203, 203); */
+}
+.service {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .car-services {
+
+    max-width: 300px;
+    min-height: 10px;
+    line-height: 30px;
+    margin: 4%;
+    border: 0px solid lightskyblue;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .car-services:hover {
+     border-radius: 10px;
+     border: 2px solid  gainsboro;
+     background-color: rgb(206, 203, 203);
+     transform: scale(1.1);
+     transition: 0.3s;
+ }
+.ser-text {
+    text-align: center;
+    color: navy;
+}
+ .rent-img {
+     text-align: center;
+     margin: 5%;
+ }
+ .rent-img:hover {
+     transition: 0.3s;
+     transform: scale(1.1);
+ }
+
+ .company-overview {
+    display: flex;
+    background-color:rgb(206, 203, 203);
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2%;
+ }
+.overview {
+    text-align: justify;
+    padding: 2%;
+    margin: 4%;
+    line-height: 40px;
+    position: relative;
+    color: navy;
+    max-width: 750px;
+    border-bottom: 1px solid lightslategray;
+}
+.team > h2 {
+    text-align: center;
+    color: navy;
+}
+.story-img img{
+    border-radius: 10px;
+}
+.story-img img:hover{
+    border-radius: 10px;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+
+/* main end */
+.footer-container{
+    width: 100%;
+    padding: 5%;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-style: italic;
+
+}
+.quicklinks > p {
+    font-weight: bold;
+}
+.contacts > p{
+    font-weight: bold;
+}
+.list a,li{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    line-height: 30px;
+    margin-left: 1%;
+}
+.contacts img, a{
+    text-decoration: none;
+    vertical-align: middle;
+    color:white;
+    cursor: pointer;
+    padding: 5px; 
+    line-height: 5px; 
+}
+.address {
+    line-height: 30px;
+}

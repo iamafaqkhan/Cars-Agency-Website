@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <style>
+        @font-face {
+            font-family: "my-font";
+            src: url("../asset/Montserrat-VariableFont_wght.ttf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "my-font";
+            /* border: 1px solid black; */
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+           background-color:rgb(204, 198, 198) ; 
+        }
+
+       
+
+        .form {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .contact-form {
+            max-width: 400px;
+            flex: 1;
+        }
+
+        .form-header {
+            border-bottom: 1px solid navy;
+            padding: 15px 0px;
+            background-color: navy;
+            color: white;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .form-header h2,
+        p {
+            text-align: center;
+            line-height: 30px;
+
+
+        }
+
+        .form-body {
+            background-color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .input-field {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        label {
+            color: navy;
+        }
+
+        input[type="text"],
+        [type="email"],
+        [type="password"],
+        [class="select"],
+        [type="submit"] {
+            width: 100%;
+            font-size: 15px;
+            height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgb(204, 198, 198);
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="form">
+
+        <img src="../asset/pngimg.com - honda_PNG102938.png" alt="" width="400px">
+        <form class="contact-form" method="get" action="../index.html">
+            <div class="form-header">
+                <h2>Login</h2>
+            </div>
+
+            <div class="form-body">
+
+                <div class="row">
+                    <div class="input-field">
+                        <label>Enter Username</label>
+                        <input type="text" placeholder="Enter First Name" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field">
+                        <label for="first-name">Email</label>
+                        <input type="email" placeholder="Enter Email Address" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password" />
+                    </div>
+                </div>
+                <div><p>Don't have Account?<a href="#" style="text-decoration: none;">&nbsp;&nbsp;SignUp</a></p></div>
+                <div class="row">
+                        <div class="input-field">
+                            <input type="submit" style="background: navy; color: white; padding: 0px;" />
+                        </div>
+                </div>
+
+
+
+    </section>
+
+</body>
+
+</html>

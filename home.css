@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'my-font' ;
+    src: url("./asset/Montserrat-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'my-font';
+    /* border: 1px solid black; */
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+/* Navigation Start */
+.navigation {
+    background-color: navy;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+    align-items: baseline;
+       
+}
+
+.navlist {
+    max-width: 800px;
+    flex: 1;
+    text-align: center;
+}
+.nav-logo {
+    align-items: baseline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navitem {
+    padding: 0px 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.button button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    color: navy;
+   
+}
+.button{
+    display: inline-block;
+}
+.button button:hover {
+    background-color:  red;
+    color: white;
+    transition-duration: 0.4s;
+}
+.navitem:hover{
+    font-weight: bold;
+    text-shadow: 0px 0px 10px white;
+}
+@media screen and (max-width: 600px) {
+    
+    .navlist {
+        background-color: gray;
+        color: white;
+        margin-top: 5px;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+    .nav-button {
+        margin-top:10px ;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    
+   
+}
+/* Navigation End */
+
+.custom-shape-divider-top-1737742160 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1737742160 svg {
+    position: relative;
+    display: block;
+}
+
+.custom-shape-divider-top-1737742160 .shape-fill {
+    fill: #00007F;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: navy;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+}
+.img-container img:hover{
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.text-container div {
+    color: white;
+    line-height: 35px;
+    font-size: 100%;
+   
+}
+.b-container {
+
+    padding: 15px 30px ;
+    margin: 15px 5px ;
+    line-height: 5px;
+    color: navy;
+    background-color: white;
+    border: 0px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer; 
+
+}
+.b-container:hover{
+    background-color: red;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.featured-cars {
+    background-color:  rgb(206, 203, 203);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap; 
+    padding-bottom: 5%;
+}
+.fea-title {
+    font-size: 100%;
+    text-align: center;
+    padding-top: 10%;
+    background-color:  rgb(206, 203, 203);
+    color: navy;
+    text-transform: capitalize;
+}
+.features-car-img {
+    background-color: rgb(206, 203, 203);
+    background-size: cover;
+    text-align: center;
+    width: 300px;
+    margin: 5px 50px 5px 50px;
+    line-height: 30px;
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.features-car-img img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.detail-button {
+
+    padding: 10px 25px;
+    margin-top: 20px;
+    color: navy ;
+    border: 1px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+.detail-button:hover{
+    background-color: red;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.con-title {
+    text-align: center;
+    padding: 1%;
+    color: navy;
+    background-color:  rgb(192, 190, 190);
+    padding-top: 100px;
+}
+
+.p-p-container {
+    background-color:  rgb(192, 190, 190);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.p-container{ 
+    padding: 1%;
+    margin: 10px 0px 10px 0px;
+ 
+}
+.p-container p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    filter: opacity(0.5);
+    font-size: x-large;
+}
+
+.c-container {
+
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    filter:  opacity(0.5);
+    padding: 10px;
+}
+
+.c-container:hover{
+    transition: 0.4s;
+    filter: none;
+}
+.services-text {
+
+    color: navy;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;
+}
+.services-text:hover{
+    background-color: navy;
+    color: white;
+    transition: 0.3s;
+}
+.test-title h2 {
+    text-align: center;
+    background-color:  rgb(158, 156, 156);
+    color: navy;
+    padding: 1%;
+    padding-top: 100px;
+}
+.testimonial {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:  rgb(158, 156, 156);
+    padding: 3%;
+    padding-bottom: 50px;
+}
+.test {
+    max-width: 300px;
+    min-height: 10px;
+    line-height: 30px;
+    margin: 4px;
+    background-color:  rgb(189, 186, 186);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.name {
+    font-weight: bold;
+}
+.test img{
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.test:hover {
+    border-radius: 10px;
+    border: 1px solid rgb(158, 156, 156);
+    background-color:  rgb(158, 156, 156);
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px gray;
+}
+.test img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.footer-container{
+    width: 100%;
+    padding: 5%;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-style: italic;
+
+}
+.quicklinks > p {
+    font-weight: bold;
+}
+.contacts > p{
+    font-weight: bold;
+}
+.list a,li{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    line-height: 30px;
+    margin-left: 1%;
+}
+.contacts img, a{
+    text-decoration: none;
+    vertical-align: middle;
+    color:white;
+    cursor: pointer;
+    padding: 5px; 
+    line-height: 5px; 
+}
+.address {
+    line-height: 30px;
+}

@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'my-font' ;
+    src: url("../asset/Montserrat-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'my-font';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(206, 203, 203);
+  
+}
+
+/* Navigation Start */
+.navigation {
+    background-color: navy;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+    align-items: baseline;
+       
+}
+
+.navlist {
+    max-width: 800px;
+    flex: 1;
+    text-align: center;
+}
+.nav-logo {
+    align-items: baseline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navitem {
+    padding: 0px 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.button button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    color: navy;
+   
+}
+.button{
+    display: inline-block;
+}
+.button button:hover {
+    background-color:  red;
+    color: white;
+    transition-duration: 0.4s;
+}
+.navitem:hover{
+    font-weight: bold;
+    text-shadow: 0px 0px 10px white;
+}
+@media screen and (max-width: 600px) {
+    
+    .navlist {
+        background-color: gray;
+        color: white;
+        margin-top: 5px;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+    .nav-button {
+        margin-top:10px ;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+/* Navigation End */
+
+
+
+/* main-----code */
+.featured-cars {
+    background-color:  rgb(206, 203, 203);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap; 
+    margin-bottom: 200px;
+}
+.fea-title {
+    font-size: 100%;
+    margin: 5%;
+    text-align: center;
+    background-color:  rgb(206, 203, 203);
+    color: navy;
+    text-transform: capitalize;
+}
+.features-car-img {
+    background-color: rgb(206, 203, 203);
+    background-size: cover;
+    text-align: center;
+    width: 300px;
+    margin: 5px 50px 5px 50px;
+    line-height: 30px;
+    padding: 10px;
+    /* overflow: hidden; */
+    cursor: pointer;
+}
+.features-car-img img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.detail-button {
+
+    padding: 10px 25px;
+    margin-top: 20px;
+    color: navy ;
+    border: 1px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer; 
+}
+.detail-button:hover{
+    background-color: red;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.custom-shape-divider-top-1737742160 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1737742160 svg {
+    position: relative;
+    display: block;
+}
+
+.custom-shape-divider-top-1737742160 .shape-fill {
+    fill: #00007F;
+}
+
+
+.header-text {
+
+    color:navy;
+   font-size: large;
+   text-align: center;
+    margin: 8%;
+
+}
+.menu {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box  {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(139, 135, 135);
+    padding: 20px;
+    width: 1000px;
+}
+select{
+    flex: 1;
+    padding: 10px 30px;
+    border: 0px;
+    border-radius: 50px;
+    width: 100%;
+    background-color: rgb(133, 132, 132);
+    color: white;
+    
+}
+
+.select {
+    border: 0px;
+    border-radius: 50px;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    margin: 10px;
+}
+
+.select button {
+    padding: 10px;
+    border: 0px;
+    border-radius: 50px;
+    width: 100%;
+    background-color:red;
+    color: white;
+    font-weight: bold;
+}
+.select button:hover {
+    background-color: white;
+    color: navy;
+}
+@media (max-width:600px){
+    .input-box {
+        display: inline;
+        background-color: navy;
+    }
+    select {
+        background-color: white;
+        color: navy;
+    }  
+    .header-img {
+        display: none;
+    } 
+}
+
+/* main----------end */
+
+.footer-container{
+    width: 100%;
+    padding: 5%;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-style: italic;
+
+}
+.quicklinks > p {
+    font-weight: bold;
+}
+.contacts > p{
+    font-weight: bold;
+}
+.list a,li{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    line-height: 30px;
+    margin-left: 1%;
+}
+.contacts img, a{
+    text-decoration: none;
+    vertical-align: middle;
+    color:white;
+    cursor: pointer;
+    padding: 5px; 
+    line-height: 5px; 
+}
+.address {
+    line-height: 30px;
+}
