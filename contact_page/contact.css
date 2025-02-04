@@ -67,13 +67,15 @@ html, body {
 .navitem:hover{
     font-weight: bold;
     text-shadow: 0px 0px 10px white;
+    border-bottom: 2px solid white;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     
     .navlist {
-        background-color: gray;
         color: white;
         margin-top: 5px;
+        display: flex;
+        flex-direction: column;
     }
     .nav-logo{
         text-align: center;
@@ -83,9 +85,17 @@ html, body {
     }
     .navbar{
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-   
+    .navitem {
+        padding: 5px;
+        margin: 5px;
+       
+    }
+    .navitem:hover {
+        border-bottom: 1px solid white;
+    } 
 }
 /* Navigation End */
 
